@@ -15,6 +15,8 @@ export function addPodcastToHTML(id) {
 
   const preview = document.createElement("div");
   preview.className = "podcast";
+  preview.id = "podcast";
+  preview.dataset.id = podcast.id;
 
   preview.innerHTML = `
     <img
@@ -98,7 +100,7 @@ function getTimeSinceUpdated(podcast) {
  * @param {Podcast} podcast
  * @returns {string} The HTML list Elements for the genres of the provided podcast
  */
-function createGenreListElements(podcast) {
+export function createGenreListElements(podcast) {
   const currentGenres = podcast.genres;
   let genreListElements = "";
 
