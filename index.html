@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-
+    <script src="./app.js" defer type="module"></script>
     <title>Echo Podcasts</title>
   </head>
   <body>
@@ -42,61 +42,8 @@
       </div>
     </header>
     <main>
-      <section id="podcastList">
-        <div class="podcast">
-          <img
-            src="https://content.production.cdn.art19.com/images/cc/e5/0a/08/cce50a08-d77d-490e-8c68-17725541b0ca/9dcebd4019d57b9551799479fa226e2a79026be5e2743c7aef19eac53532a29d66954da6e8dbdda8219b059a59c0abe6dba6049892b10dfb2f25ed90d6fe8d9a.jpeg"
-            alt="Podcast Cover Image"
-            class="podcast__image"
-          />
-          <h2>Something Was Wrong</h2>
-          <h4>14 Seasons | Updated 2 years ago</h4>
-          <ul class="podcast__genres">
-            <li>Personal Growth</li>
-            <li>Investigative Journalism</li>
-          </ul>
-        </div>
-        <div class="podcast">
-          <img
-            src="https://content.production.cdn.art19.com/images/cc/e5/0a/08/cce50a08-d77d-490e-8c68-17725541b0ca/9dcebd4019d57b9551799479fa226e2a79026be5e2743c7aef19eac53532a29d66954da6e8dbdda8219b059a59c0abe6dba6049892b10dfb2f25ed90d6fe8d9a.jpeg"
-            alt="Podcast Cover Image"
-            class="podcast__image"
-          />
-          <h2>Something Was Wrong</h2>
-          <h4>14 Seasons | Updated 2 years ago</h4>
-          <ul class="podcast__genres">
-            <li>Personal Growth</li>
-            <li>Investigative Journalism</li>
-          </ul>
-        </div>
-        <div class="podcast">
-          <img
-            src="https://content.production.cdn.art19.com/images/cc/e5/0a/08/cce50a08-d77d-490e-8c68-17725541b0ca/9dcebd4019d57b9551799479fa226e2a79026be5e2743c7aef19eac53532a29d66954da6e8dbdda8219b059a59c0abe6dba6049892b10dfb2f25ed90d6fe8d9a.jpeg"
-            alt="Podcast Cover Image"
-            class="podcast__image"
-          />
-          <h2>Something Was Wrong</h2>
-          <h4>14 Seasons | Updated 2 years ago</h4>
-          <ul class="podcast__genres">
-            <li>Personal Growth</li>
-            <li>Investigative Journalism</li>
-          </ul>
-        </div>
-        <div class="podcast">
-          <img
-            src="https://content.production.cdn.art19.com/images/cc/e5/0a/08/cce50a08-d77d-490e-8c68-17725541b0ca/9dcebd4019d57b9551799479fa226e2a79026be5e2743c7aef19eac53532a29d66954da6e8dbdda8219b059a59c0abe6dba6049892b10dfb2f25ed90d6fe8d9a.jpeg"
-            alt="Podcast Cover Image"
-            class="podcast__image"
-          />
-          <h2>Something Was Wrong</h2>
-          <h4>14 Seasons | Updated 2 years ago</h4>
-          <ul class="podcast__genres">
-            <li>Personal Growth</li>
-            <li>Investigative Journalism</li>
-          </ul>
-        </div>
-      </section>
-      <div id="modal" class="modal-container">
+      <section id="podcast-list"></section>
+      <div id="modal" class="modal-container hidden">
         <div class="modal">
           <div class="modal__header">
             <h1 id="modal-title" class="modal__title">Something Was Wrong</h1>
@@ -127,8 +74,11 @@
           <section id="modal-seasons">
             <h2 class="modal__seasons-heading">Seasons</h2>
             <div class="modal__season">
-              <h2>Season 1: Season 1</h2>
-              <p>Introduction to the fundamentals</p>
+              <div>
+                <h2>Season 1: Season 1</h2>
+                <p>Introduction to the fundamentals</p>
+              </div>
+              <p>8 episodes</p>
             </div>
             <div class="modal__season">
               <h2>Season 1: Season 1</h2>

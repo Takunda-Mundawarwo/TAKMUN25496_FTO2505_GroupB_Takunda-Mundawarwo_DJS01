@@ -65,6 +65,9 @@
 }
 
 @layer utilities {
+  .hidden {
+    display: none !important;
+  }
   .podcast {
     margin: 0.75rem;
     padding: 0.5rem;
@@ -172,22 +175,26 @@
   }
 
   .modal__season {
+    text-align: start;
     background-color: var(--white);
     margin: 1rem 0;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.25rem var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 @layer layout {
-  #podcastList {
+  #podcast-list {
     display: flex;
     flex-direction: column;
   }
 
   @media (min-width: 768px) {
-    #podcastList {
+    #podcast-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -210,13 +217,13 @@
   }
 
   @media (min-width: 1024px) {
-    #podcastList {
+    #podcast-list {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
   @media (min-width: 1440px) {
-    #podcastList {
+    #podcast-list {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
