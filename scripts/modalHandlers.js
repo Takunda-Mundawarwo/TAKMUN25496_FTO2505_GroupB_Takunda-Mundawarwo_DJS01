@@ -34,10 +34,10 @@ function populateModal(id) {
 
   modalTitle.innerText = podcast.title;
   modalImage.src = podcast.image;
-  modalDescription.InnerText = podcast.description;
+  modalDescription.innerText = podcast.description;
   modalGenres.innerHTML = createGenreListElements(podcast);
-  modalUpdatedDate.InnerText = updatedDate.toDateString();
-  modalSeasonsList.InnerHTML = createSeasonsListElements(id);
+  modalUpdatedDate.innerText = updatedDate.toDateString();
+  modalSeasonsList.innerHTML = createSeasonsListElements(id);
 }
 
 function createSeasonsListElements(id) {
